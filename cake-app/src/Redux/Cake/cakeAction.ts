@@ -1,1 +1,7 @@
-export const BUY_CAKE: string = 'BUY_CAKE'
+import { BUY_CAKE } from "./cakeTypes";
+
+export const buyCake = () => {
+  return {
+    type: BUY_CAKE
+  }
+}
