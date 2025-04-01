@@ -21,7 +21,7 @@ const CakeContainer:React.FC<PropsType> = ({ numOfCakes, buyCake}) => {
 
 const mapStateToProps = (state: RootState) => {
   return {
-    numOfCakes: state?.numOfCakes
+    numOfCakes: state?.cake?.numOfCakes
   }
 }
 

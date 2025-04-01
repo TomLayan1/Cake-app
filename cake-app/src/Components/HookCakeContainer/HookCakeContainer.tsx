@@ -5,7 +5,7 @@ import { RootState } from '../../Redux/Store'
 import { buyCake } from '../../Redux/Cake/cakeAction'
 
 const HookCakeContainer:React.FC = () => {
-  const numOfCakes = useSelector((state:RootState) => state?.numOfCakes);
+  const numOfCakes = useSelector((state:RootState) => state?.cake?.numOfCakes);
   const dispatch = useDispatch();
 
   return (
