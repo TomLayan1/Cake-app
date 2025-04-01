@@ -1,0 +1,23 @@
+.cake_container{
+  border: 1px solid #868484;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cake_num{
+  color: white;
+  margin-bottom: 20px;
+}
+.buy_btn{
+  border: none;
+  background-color: #0000ff;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.buy_btn:hover{
+  background-color: #3737eb;
+}
