@@ -4,7 +4,7 @@ Welcome to the Cake App! This project is a simple React application designed to 
 
 ## Features
 
-- **Cake Inventory Management:** Remove cakes from the inventory to understand state management with Redux.
+- **Cake state Management:** Updating the state of the app to understand state management with Redux.
 - **Redux Integration:** Learn how to connect Redux with React components and manage the application's state effectively.
 
 ## Getting Started
