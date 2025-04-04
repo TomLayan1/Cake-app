@@ -6,6 +6,7 @@ type InitialIceCreamStateType = {
 
 type ActionType = {
   type: string
+  payload: number
 }
 
 const initialIceCreamState: InitialIceCreamStateType = {
@@ -16,7 +17,7 @@ export const iceCreamReducer = (state=initialIceCreamState, action: ActionType) 
   switch(action?.type) {
     case BUY_ICECREAM: return {
       ...state,
-      numOfIceCream: state?.numOfIceCream - 1
+      numOfIceCream: state?.numOfIceCream - action?.payload
     }
 
     default: return state

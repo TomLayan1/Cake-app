@@ -9,6 +9,18 @@
   color: white;
   margin-bottom: 20px;
 }
+.input_btn_container{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.cake_quantity_input{
+  border: none;
+  outline: none;
+  padding: 9px 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
 .buy_btn{
   border: none;
   background-color: #0000ff;

@@ -12,7 +12,13 @@
   color: white;
   margin-bottom: 20px;
 }
-
+.cream_quantity_input{
+  border: none;
+  outline: none;
+  padding: 9px 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
 .hook_buy_cream {
   border: none;
   background-color: #b7ff00;
