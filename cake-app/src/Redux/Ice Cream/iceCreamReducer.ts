@@ -1,23 +1,23 @@
 import { BUY_ICECREAM } from "./iceCreamType";
 
-type InitialIceCreamStateType = {
+export type IceCreamStateType = {
   numOfIceCream: number
 }
 
-type ActionType = {
-  type: string
+export type CreamActionType = {
+  type: typeof BUY_ICECREAM
   payload: number
 }
 
-const initialIceCreamState: InitialIceCreamStateType = {
+const IceCreamState: IceCreamStateType = {
   numOfIceCream: 20
 }
 
-export const iceCreamReducer = (state=initialIceCreamState, action: ActionType) => {
-  switch(action?.type) {
+export const iceCreamReducer = (state = IceCreamState, action: CreamActionType) => {
+  switch(action.type) {
     case BUY_ICECREAM: return {
       ...state,
-      numOfIceCream: state?.numOfIceCream - action?.payload
+      numOfIceCream: state?.numOfIceCream - (action.payload || 1)
     }
 
     default: return state

@@ -1,23 +1,23 @@
 import { BUY_CAKE } from "./cakeTypes";
 
-type ActionType = {
-  type: string;
+export type CakeActionType = {
+  type: typeof BUY_CAKE;
   payload: number;
 }
 
-type InitialStateType = {
+export type InitialStateType = {
   numOfCakes: number;
 }
 
-const initialState: InitialStateType = {
+const cakeState: InitialStateType = {
   numOfCakes: 10
 }
 
-export const cakeReducer = (state=initialState, action: ActionType) => {
-  switch(action?.type) {
+export const cakeReducer = (state = cakeState, action: CakeActionType): InitialStateType => {
+  switch(action.type) {
     case BUY_CAKE: return {
       ...state,
-      numOfCakes: state?.numOfCakes - action?.payload
+      numOfCakes: state?.numOfCakes - action.payload
     }
 
     default: return state

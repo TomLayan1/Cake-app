@@ -6,3 +6,6 @@ export const buyCake = (quantity: number) => {
     payload: quantity
   }
 }
+
+// Define action type
+export type CakeActionType = ReturnType<typeof buyCake>;
